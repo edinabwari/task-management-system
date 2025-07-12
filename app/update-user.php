@@ -13,6 +13,7 @@ if (isset($_POST['user_name']) && isset($_POST['password']) && isset($_POST['ful
 	}
 
 	$user_name = validate_input($_POST['user_name']);
+	$email = validate_input($_POST['email']);
 	$password = validate_input($_POST['password']);
 	$full_name = validate_input($_POST['full_name']);
 	$id = validate_input($_POST['id']);

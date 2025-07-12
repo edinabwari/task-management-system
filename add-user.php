@@ -41,6 +41,10 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 					<input type="text" name="user_name" class="input-1" placeholder="Username"><br>
 				</div>
 				<div class="input-holder">
+                    <label>Email</label>
+                    <input type="email" name="email" " class="input-1" placeholder="Email"><br>
+                </div>
+				<div class="input-holder">
 					<lable>Password</lable>
 					<input type="text" name="password" class="input-1" placeholder="Password"><br>
 				</div>
