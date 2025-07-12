@@ -24,9 +24,7 @@
 			</div>
       	  <?php } 
      
-      	  ?>
-  
-			
+      	  ?>			
 		  <div class="mb-3">
 		    <label for="exampleInputEmail1" class="form-label">User name</label>
 		    <input type="text" class="form-control" name="user_name">
