@@ -1,8 +1,8 @@
 <header class="header">
-	<h2 class="u-name">Task <b>Pro</b>
-		<label for="checkbox">
+	<h2 class="u-name">Task Management System<b>Pro</b>
+		<!-- <label for="checkbox">
 			<i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
-		</label>
+		</label> -->
 	</h2>
 	<span class="notification" id="notificationBtn">
 		<i class="fa fa-bell" aria-hidden="true"></i>
