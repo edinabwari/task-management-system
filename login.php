@@ -36,6 +36,10 @@
 		    <input type="text" class="form-control" name="user_name">
 		  </div>
 		  <div class="mb-3">
+            <label for="userEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="email" id="userEmail" required>
+        </div>
+		  <div class="mb-3">
 		    <label for="exampleInputPassword1" class="form-label">Password</label>
 		    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
 		  </div>
