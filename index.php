@@ -91,7 +91,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 			<?php } ?>
 		</section>
 	</div>
-
+<!-- Script to highlight the dashboard tab as active in the sidebar -->
 <script type="text/javascript">
 	var active = document.querySelector("#navList li:nth-child(1)");
 	active.classList.add("active");
