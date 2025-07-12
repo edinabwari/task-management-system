@@ -11,7 +11,7 @@
       
       <form method="POST" action="app/login.php" class="shadow p-4">
 
-      	  <h3 class="display-4">LOGIN</h3>
+      	  <h3 class="display-4">Login Formls</h3>
       	  <?php if (isset($_GET['error'])) {?>
       	  	<div class="alert alert-danger" role="alert">
 			  <?php echo htmlspecialchars($_GET['error']); ?>
