@@ -23,11 +23,7 @@
 			  <?php echo htmlspecialchars($_GET['success']); ?>
 			</div>
       	  <?php } 
-
-                // $pass = "123";
-                // $pass = password_hash($pass, PASSWORD_DEFAULT);
-                // echo $pass;
-      
+     
       	  ?>
   
 			
