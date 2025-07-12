@@ -40,7 +40,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			
+
 			<!-- Dashboard view for Admin -->
 			<?php if ($_SESSION['role'] == "admin") { ?>
 				<div class="dashboard">
@@ -67,6 +67,8 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 					</div>
 				</div>
 			<?php }else{ ?>
+
+				<!-- Dashboard view for regular users like employees -->
 				<div class="dashboard">
 					<div class="dashboard-item">
 						<i class="fa fa-tasks"></i>
