@@ -48,22 +48,22 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 						<i class="fa fa-tasks"></i>
 						<span><?=$num_task?> All Tasks</span>
 					</div>
-					<div class="dashboard-item">
+					<!-- <div class="dashboard-item">
 						<i class="fa fa-window-close-o"></i>
 						<span><?=$overdue_task?> Overdue</span>
-					</div>
-					<div class="dashboard-item">
+					</div> -->
+					<!-- <div class="dashboard-item">
 						<i class="fa fa-clock-o"></i>
 						<span><?=$nodeadline_task?> No Deadline</span>
-					</div>
-					<div class="dashboard-item">
+					</div> -->
+					<!-- <div class="dashboard-item">
 						<i class="fa fa-exclamation-triangle"></i>
 						<span><?=$todaydue_task?> Due Today</span>
-					</div>
-					<div class="dashboard-item">
+					</div> -->
+					<!-- <div class="dashboard-item">
 						<i class="fa fa-bell"></i>
 						<span><?=$overdue_task?> Notifications</span>
-					</div>
+					</div> -->
 					<div class="dashboard-item">
 						<i class="fa fa-square-o"></i>
 						<span><?=$pending?> Pending</span>
@@ -83,14 +83,14 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 						<i class="fa fa-tasks"></i>
 						<span><?=$num_my_task?> My Tasks</span>
 					</div>
-					<div class="dashboard-item">
+					<!-- <div class="dashboard-item">
 						<i class="fa fa-window-close-o"></i>
 						<span><?=$overdue_task?> Overdue</span>
-					</div>
-					<div class="dashboard-item">
+					</div> -->
+					<!-- <div class="dashboard-item">
 						<i class="fa fa-clock-o"></i>
 						<span><?=$nodeadline_task?> No Deadline</span>
-					</div>
+					</div> -->
 					<div class="dashboard-item">
 						<i class="fa fa-square-o"></i>
 						<span><?=$pending?> Pending</span>
