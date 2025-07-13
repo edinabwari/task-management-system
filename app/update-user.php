@@ -36,7 +36,8 @@ if (isset($_POST['user_name']) && isset($_POST['password']) && isset($_POST['ful
        include "Model/User.php";
        $password = password_hash($password, PASSWORD_DEFAULT);
 
-       $data = array($full_name, $user_name, $password, "employee", $id, "employee");
+       $data = array($full_name, $user_name, $email, $password, "employee", $id);
+
        update_user($conn, $data);
 
        $em = "User created successfully";
