@@ -11,15 +11,15 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
       $tasks = get_all_tasks_due_today($conn);
       $num_task = count_tasks_due_today($conn);
 
-    }else if (isset($_GET['due_date']) &&  $_GET['due_date'] == "Overdue") {
-    	$text = "Overdue";
-      $tasks = get_all_tasks_overdue($conn);
-      $num_task = count_tasks_overdue($conn);
+    // }else if (isset($_GET['due_date']) &&  $_GET['due_date'] == "Overdue") {
+    // 	$text = "Overdue";
+    //   $tasks = get_all_tasks_overdue($conn);
+    //   $num_task = count_tasks_overdue($conn);
 
-    }else if (isset($_GET['due_date']) &&  $_GET['due_date'] == "No Deadline") {
-    	$text = "No Deadline";
-      $tasks = get_all_tasks_NoDeadline($conn);
-      $num_task = count_tasks_NoDeadline($conn);
+    // }else if (isset($_GET['due_date']) &&  $_GET['due_date'] == "No Deadline") {
+    // 	$text = "No Deadline";
+    //   $tasks = get_all_tasks_NoDeadline($conn);
+    //   $num_task = count_tasks_NoDeadline($conn);
 
     }else{
     	 $tasks = get_all_tasks($conn);
@@ -52,11 +52,11 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			<?php if ($tasks != 0) { ?>
 			<table class="main-table">
 				<tr>
-					<th>#</th>
+					<th>Number</th>
 					<th>Title</th>
 					<th>Description</th>
 					<th>Assigned To</th>
-					<th>Due Date</th>
+					<th>Deadline</th>
 					<th>Status</th>
 					<th>Action</th>
 				</tr>
