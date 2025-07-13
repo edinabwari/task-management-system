@@ -32,7 +32,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">Edit Task <a href="tasks.php">Tasks</a></h4>
+			<h4 class="title">Edit Task <a href="tasks.php">View Tasks</a></h4>
 			<form class="form-1"
 			      method="POST"
 			      action="app/update-task.php">
@@ -56,7 +56,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 					<textarea name="description" rows="5" class="input-1" ><?=$task['description']?></textarea><br>
 				</div>
 				<div class="input-holder">
-					<lable>Snooze</lable>
+					<lable>Deadline</lable>
 					<input type="date" name="due_date" class="input-1" placeholder="Snooze" value="<?=$task['due_date']?>"><br>
 				</div>
 				
@@ -75,7 +75,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 				</div>
 				<input type="text" name="id" value="<?=$task['id']?>" hidden>
 
-				<button class="edit-btn">Update</button>
+				<button class="edit-btn">Send Changes</button>
 			</form>
 			
 		</section>
