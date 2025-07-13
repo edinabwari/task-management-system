@@ -59,3 +59,15 @@ function count_users($conn){
 
 	return $stmt->rowCount();
 }
+//here 
+function get_user_email_by_id($conn, $user_id) {
+    $sql = "SELECT email, full_name FROM users WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$user_id]);
+
+    if ($stmt->rowCount() > 0) {
+        return $stmt->fetch(PDO::FETCH_ASSOC); 
+    } else {
+        return null;
+    }
+}
