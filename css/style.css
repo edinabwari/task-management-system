@@ -9,7 +9,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 15px 30px;
-	background: #23242b;
+	background: #2b3a40; 
 	color: #fff;
 }
 .u-name {
@@ -24,9 +24,7 @@
 	cursor: pointer;
 	color: #fff;
 }
-/*.header i:hover {
-	color: #127b8e;
-}*/
+
 .header .notification {
 	position: relative;
 	cursor: pointer;
@@ -35,7 +33,7 @@
 	position: absolute;
 	top: 5px;
 	left: 5px;
-	background: #1f1e1e;
+	background: #C80000;
 	padding: 1px;
 	border-radius: 50%;
 }
@@ -94,7 +92,6 @@
 	display: flex;
 }
 
-
 .side-bar ul {
 	margin-top: 20px;
 	list-style: none;
@@ -119,10 +116,10 @@
 	letter-spacing: 1px;
 }
 .side-bar .active a {
-	color: #127b8e !important;
+	color: #8cc16e ;
 }
 .side-bar .active a i {
-	color: #127b8e !important;
+	color: #8cc16e ;
 }
 .side-bar ul .active:hover {
 	background: transparent;
@@ -173,7 +170,7 @@
 	display: inline-block;
     padding-left: 10px;
 	border: none;
-	background: #00CF22;
+	background: #8cc16e;
 	padding: 10px 15px;
 	color: #fff;
 	font-size: 16px;
@@ -192,7 +189,7 @@
 	display: inline-block;
     padding-left: 10px;
 	border: none;
-	background: #00CF22;
+	background: #8cc16e;
 	padding: 10px 15px;
 	color: #fff;
 	font-size: 16px;
@@ -254,7 +251,7 @@
 	display: inline-block;
     padding-left: 10px;
 	border: none;
-	background: #006CE0;
+	background: #127b8e;
 	padding: 10px 15px;
 	color: #fff;
 	font-size: 16px;
@@ -296,7 +293,7 @@
 }
 .success {
 	background: #80CE91;
-	color: #009D22;
+	color: #8cc16e;
 	padding: 10px;
 	margin-bottom: 10px;
 }
