@@ -31,7 +31,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">Edit Users <a href="user.php">Users</a></h4>
+			<h4 class="title">Edit Users <a href="user.php"> View Users</a></h4>
 			<form class="form-1"
 			      method="POST"
 			      action="app/update-user.php">
@@ -54,17 +54,17 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 					<lable>Username</lable>
 					<input type="text" name="user_name" value="<?=$user['username']?>" class="input-1" placeholder="Username"><br>
 				</div>
-				<!-- <div class="input-holder">
+				<div class="input-holder">
                     <label>Email</label>
                     <input type="email" name="email" value="<?= $user['email'] ?>" class="input-1" placeholder="example@email.com"><br>
-                </div> -->
+                </div> 
 				<div class="input-holder">
 					<lable>Password</lable>
 					<input type="text" value="**********" name="password" class="input-1" placeholder="Password"><br>
 				</div>
 				<input type="text" name="id" value="<?=$user['id']?>" hidden>
 
-				<button class="edit-btn">Update</button>
+				<button class="edit-btn">Update User Details</button>
 			</form>
 			
 		</section>
