@@ -31,7 +31,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
 			<?php if ($tasks != 0) { ?>
 			<table class="main-table">
 				<tr>
-					<th>#</th>
+					<th>Number</th>
 					<th>Title</th>
 					<th>Description</th>
 					<th>Status</th>
