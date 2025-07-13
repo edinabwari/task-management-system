@@ -293,28 +293,41 @@
 }
 .success {
 	background: #80CE91;
-	color: #8cc16e;
+	color: #fefffe;
 	padding: 10px;
 	margin-bottom: 10px;
 }
-.dashboard {
+/* .dashboard {
 	display: flex;
 	max-width: 650px;
 	width: 95%;
 	justify-content: space-between;
 	flex-wrap: wrap;
+} */
+.dashboard {
+    display: flex;
+    max-width: 100%; 
+    width: 100%; 
+    justify-content: flex-start; 
+    flex-wrap: nowrap;
+    gap: 20px; 
+    overflow-x: auto; 
 }
+
 .dashboard-item {
     text-align: center;
     background: #262931;
-    width: 200px;
-    padding: 30px 5px;
-    margin-bottom: 40px;
+    min-width: 150px; 
+    padding: 20px 5px; 
+    margin-bottom: 0; 
+    flex-shrink: 0; 
+    border-radius: 5px; 
 }
-.dashboard-item i{
-	display: block;
+
+.dashboard-item i {
+    display: block;
     color: #fff;
-    font-size: 30px;
+    font-size: 44px; 
     margin-bottom: 5px;
 }
 .dashboard-item span{
