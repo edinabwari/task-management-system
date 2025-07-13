@@ -4,6 +4,56 @@
 	box-sizing: border-box;
 	font-family: arial, sans-serif;
 }
+
+/* styling for login form*/
+.login-body {
+	background-color: #f7e9c4; 
+}
+.form-1 {
+	width: 90%;
+	max-width: 500px;
+}
+.input-holder label {
+	display: block;
+	margin-bottom: 5px;
+}
+.input-1 {
+	border: 2px solid #ccc;
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	outline: none;
+	border-radius: 5px;
+	display: block;
+}
+
+.input-1:focus{
+	border-color: #444343;
+}
+.danger {
+	background: #FF98AA;
+	color: #B20008;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.success {
+	background: #80CE91;
+	color: #fefffe;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.login-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.login-body form {
+	max-width:420px;
+	width: 90%;
+}
+
+/* Index Page styling*/
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -66,7 +116,6 @@
 .open-notification {
 	display: block;
 }
-
 
 .user-p {
 	text-align: center;
@@ -148,20 +197,14 @@
 	display: none;
 }
 
-.login-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
-.login-body form {
-	max-width:420px;
-	width: 90%;
-}
+
 
 .section-1 {
 	padding: 30px;
+	width: 100%;
+	background: #f7e9c4 !important;
 }
+
 .section-1 .title {
     margin-bottom: 10px;
 }
@@ -170,7 +213,7 @@
 	display: inline-block;
     padding-left: 10px;
 	border: none;
-	background: #8cc16e;
+	background: #89c069;
 	padding: 10px 15px;
 	color: #fff;
 	font-size: 16px;
@@ -178,7 +221,7 @@
 	cursor: pointer;
 	outline: none;
 	transition: background 1s;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .section-1 .title-2 {
@@ -207,11 +250,6 @@
 	margin-left: 10px;
 }
 
-
-.section-1 {
-	width: 100%;
-	background: #ffe;
-}
 .section-1 .title a:hover{
 	opacity: .6;
 }
@@ -264,39 +302,7 @@
 .edit-btn:hover{
 	opacity: .6;
 }
-.form-1 {
-	width: 90%;
-	max-width: 500px;
-}
-.input-holder lable {
-	display: block;
-	margin-bottom: 5px;
-}
-.input-1 {
-	border: 2px solid #ccc;
-	width: 100%;
-	padding: 10px;
-	font-size: 15px;
-	outline: none;
-	border-radius: 5px;
-	display: block;
-}
 
-.input-1:focus{
-	border-color: #555;
-}
-.danger {
-	background: #FF98AA;
-	color: #B20008;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-.success {
-	background: #80CE91;
-	color: #fefffe;
-	padding: 10px;
-	margin-bottom: 10px;
-}
 
 .dashboard {
     display: flex;
@@ -310,7 +316,7 @@
 
 .dashboard-item {
     text-align: center;
-    background: #262931;
+    background: #8bc768;
     min-width: 150px; 
     padding: 20px 5px; 
     margin-bottom: 0; 
