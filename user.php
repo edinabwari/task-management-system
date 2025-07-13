@@ -21,7 +21,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">Manage Users <a href="add-user.php">Add User</a></h4>
+			<h4 class="title">Manage Users <a href="add-user.php">Add a user</a></h4>
 			<?php if (isset($_GET['success'])) {?>
       	  	<div class="success" role="alert">
 			  <?php echo stripcslashes($_GET['success']); ?>
@@ -30,10 +30,10 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			<?php if ($users != 0) { ?>
 			<table class="main-table">
 				<tr>
-					<th>#</th>
+					<th>Number</th>
 					<th>Full Name</th>
 					<th>Username</th>
-					<th>role</th>
+					<th>Role</th>
 					<th>Action</th>
 				</tr>
 				<?php $i=0; foreach ($users as $user) { ?>
