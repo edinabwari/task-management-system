@@ -32,7 +32,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">Edit Task <a href="my_task.php">Tasks</a></h4>
+			<h4 class="title">Edit Task </h4>
 			<form class="form-1"
 			      method="POST"
 			      action="app/update-task-employee.php">

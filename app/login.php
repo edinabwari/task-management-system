@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if (isset($_POST['user_name']) && isset($_POST['password'])) {
+if (isset($_POST['user_name']) && isset($_POST['email']) && isset($_POST['password'])) {
 	include "../DB_connection.php";
 
     function validate_input($data) {
@@ -11,10 +11,15 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 	}
 
 	$user_name = validate_input($_POST['user_name']);
+	$email = validate_input($_POST['email']);
 	$password = validate_input($_POST['password']);
 
 	if (empty($user_name)) {
 		$em = "User name is required";
+	    header("Location: ../login.php?error=$em");
+	    exit();
+	}else if (empty($email)) {
+		$em = "Email is required";
 	    header("Location: ../login.php?error=$em");
 	    exit();
 	}else if (empty($password)) {
@@ -23,13 +28,14 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 	    exit();
 	}else {
     
-       $sql = "SELECT * FROM users WHERE username = ?";
+		$sql = "SELECT * FROM users WHERE username = ? AND email = ?";
        $stmt = $conn->prepare($sql);
-       $stmt->execute([$user_name]);
+       $stmt->execute([$user_name, $email]);
 
        if ($stmt->rowCount() == 1) {
        	   $user = $stmt->fetch();
        	   $usernameDb = $user['username'];
+		   $emailDb = $user['email'];
        	   $passwordDb = $user['password'];
        	   $role = $user['role'];
        	   $id = $user['id'];
@@ -63,7 +69,6 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
        	   }
        }
       
-
 	}
 }else {
    $em = "Unknown error occurred";
