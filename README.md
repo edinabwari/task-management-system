@@ -23,7 +23,7 @@ A lightweight PHP-based Task Management System built for the Cytonn Software Eng
 
 ##  Live Demo
 
-[Click to View Live System](hhttps://tasksystem.fwh.is/login.php)  
+[Click to View Live System](https://tasksystem.fwh.is/login.php)  
 *(Hosted on InfinityFree)*
 
 ##  How to Set Up Locally
