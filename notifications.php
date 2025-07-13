@@ -3,8 +3,7 @@ session_start();
 if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
     include "DB_connection.php";
     include "app/Model/Notification.php";
-    // include "app/Model/User.php";
-
+    
     $notifications = get_all_my_notifications($conn, $_SESSION['id']);
 
  ?>
@@ -30,10 +29,10 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
 			<?php if ($notifications != 0) { ?>
 			<table class="main-table">
 				<tr>
-					<th>#</th>
-					<th>Message</th>
+					<th>Number</th>
+					<th>Task Details</th>
 					<th>Type</th>
-					<th>Date</th>
+					<th>Date Assigned</th>
 				</tr>
 				<?php $i=0; foreach ($notifications as $notification) { ?>
 				<tr>

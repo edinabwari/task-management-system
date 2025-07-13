@@ -77,7 +77,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	               ?></td>
 	            <td><?=$task['status']?></td>
 					<td>
-						<a href="edit-task.php?id=<?=$task['id']?>" class="edit-btn">Edit</a>
+						
 						<a href="delete-task.php?id=<?=$task['id']?>" class="delete-btn">Delete</a>
 					</td>
 				</tr>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 06, 2024 at 10:40 AM
+-- Generation Time: Jul 13, 2025 at 03:36 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -41,22 +41,17 @@ CREATE TABLE `notifications` (
 --
 
 INSERT INTO `notifications` (`id`, `message`, `recipient`, `type`, `date`, `is_read`) VALUES
-(1, '\'Customer Feedback Survey Analysis\' has been assigned to you. Please review and start working on it.', 7, 'New Task Assigned', '2024-09-05', 1),
-(2, '\'test task\' has been assigned to you. Please review and start working on it', 7, 'New Task Assigned', '0000-00-00', 1),
-(3, '\'Example task 2\' has been assigned to you. Please review and start working on it', 2, 'New Task Assigned', '2006-09-24', 1),
-(4, '\'test\' has been assigned to you. Please review and start working on it', 8, 'New Task Assigned', '2009-06-24', 0),
-(5, '\'test task 3\' has been assigned to you. Please review and start working on it', 7, 'New Task Assigned', '2024-09-06', 1),
-(6, '\'Prepare monthly sales report\' has been assigned to you. Please review and start working on it', 7, 'New Task Assigned', '2024-09-06', 1),
-(7, '\'Update client database\' has been assigned to you. Please review and start working on it', 7, 'New Task Assigned', '2024-09-06', 1),
-(8, '\'Fix server downtime issue\' has been assigned to you. Please review and start working on it', 2, 'New Task Assigned', '2024-09-06', 0),
-(9, '\'Plan annual marketing strategy\' has been assigned to you. Please review and start working on it', 2, 'New Task Assigned', '2024-09-06', 0),
-(10, '\'Onboard new employees\' has been assigned to you. Please review and start working on it', 7, 'New Task Assigned', '2024-09-06', 0),
-(11, '\'Design new company website\' has been assigned to you. Please review and start working on it', 2, 'New Task Assigned', '2024-09-06', 0),
-(12, '\'Conduct software testing\' has been assigned to you. Please review and start working on it', 7, 'New Task Assigned', '2024-09-06', 0),
-(13, '\'Schedule team meeting\' has been assigned to you. Please review and start working on it', 2, 'New Task Assigned', '2024-09-06', 0),
-(14, '\'Prepare budget for Q4\' has been assigned to you. Please review and start working on it', 7, 'New Task Assigned', '2024-09-06', 0),
-(15, '\'Write blog post on industry trend\' has been assigned to you. Please review and start working on it', 7, 'New Task Assigned', '2024-09-06', 0),
-(16, '\'Renew software license\' has been assigned to you. Please review and start working on it', 2, 'New Task Assigned', '2024-09-06', 0);
+(20, '\'Tiytdv\' has been assigned to you. Please review and start working on it', 11, 'New Task Assigned', '2025-07-12', 0),
+(21, '\'Sales Target\' has been assigned to you. Please review and start working on it', 13, 'New Task Assigned', '2025-07-12', 0),
+(22, '\'Logistics Fuel Tracking Report\' has been assigned to you. Please review and start working on it', 4, 'New Task Assigned', '2025-07-12', 0),
+(23, '\'Print Documents\' has been assigned to you. Please review and start working on it', 14, 'New Task Assigned', '2025-07-13', 0),
+(24, '\'Print Documents\' has been assigned to you. Please review and start working on it', 14, 'New Task Assigned', '2025-07-13', 0),
+(25, '\'Meeting Minutes\' has been assigned to you. Please review and start working on it', 3, 'New Task Assigned', '2025-07-13', 0),
+(26, '\'Website Content Review\' has been assigned to you. Please review and start working on it', 6, 'New Task Assigned', '2025-07-13', 0),
+(27, '\'Social Media Post Creation\' has been assigned to you. Please review and start working on it', 6, 'New Task Assigned', '2025-07-13', 0),
+(28, '\'Data Entry Task\' has been assigned to you. Please review and start working on it', 4, 'New Task Assigned', '2025-07-13', 0),
+(29, '\'Market Research\' has been assigned to you. Please review and start working on it', 4, 'New Task Assigned', '2025-07-13', 0),
+(30, '\'Inventory Check\' has been assigned to you. Please review and start working on it', 4, 'New Task Assigned', '2025-07-13', 0);
 
 -- --------------------------------------------------------
 
@@ -79,23 +74,14 @@ CREATE TABLE `tasks` (
 --
 
 INSERT INTO `tasks` (`id`, `title`, `description`, `assigned_to`, `due_date`, `status`, `created_at`) VALUES
-(1, 'Task 1', 'Task Description', 7, NULL, 'completed', '2024-08-29 16:47:37'),
-(4, 'Monthly Financial Report Preparation', 'Prepare and review the monthly financial report, including profit and loss statements, balance sheets, and cash flow analysis.', 7, '2024-09-01', 'completed', '2024-08-31 10:50:20'),
-(5, 'Customer Feedback Survey Analysis', 'Collect and analyze data from the latest customer feedback survey to identify areas for improvement in customer service.', 7, '2024-09-03', 'in_progress', '2024-08-31 10:50:47'),
-(6, 'Website Maintenance and Update', 'Perform regular maintenance on the company website, update content, and ensure all security patches are applied.', 7, '2024-09-03', 'pending', '2024-08-31 10:51:12'),
-(7, 'Quarterly Inventory Audit', 'Conduct a thorough audit of inventory levels across all warehouses and update the inventory management system accordingly.', 2, '2024-09-03', 'completed', '2024-08-31 10:51:45'),
-(8, 'Employee Training Program Development', 'Develop and implement a new training program focused on enhancing employee skills in project management and teamwork.', 2, '2024-09-01', 'pending', '2024-08-31 10:52:11'),
-(17, 'Prepare monthly sales report', 'Compile and analyze sales data for the previous month', 7, '2024-09-06', 'pending', '2024-09-06 08:01:48'),
-(18, 'Update client database', 'Ensure all client information is current and complete', 7, '2024-09-07', 'pending', '2024-09-06 08:02:27'),
-(19, 'Fix server downtime issue', 'Investigate and resolve the cause of recent server downtimes', 2, '2024-09-07', 'pending', '2024-09-06 08:02:59'),
-(20, 'Plan annual marketing strategy', 'Develop a comprehensive marketing strategy for the next year', 2, '2024-09-04', 'pending', '2024-09-06 08:03:21'),
-(21, 'Onboard new employees', 'Complete HR onboarding tasks for the new hires', 7, '2024-09-07', 'pending', '2024-09-06 08:03:44'),
-(22, 'Design new company website', 'Create wireframes and mockups for the new website design', 2, '2024-09-06', 'pending', '2024-09-06 08:04:20'),
-(23, 'Conduct software testing', 'Run tests on the latest software release to identify bugs', 7, '2024-09-07', 'pending', '2024-09-06 08:04:39'),
-(24, 'Schedule team meeting', 'Organize a meeting to discuss project updates', 2, '2024-09-07', 'pending', '2024-09-06 08:04:57'),
-(25, 'Prepare budget for Q4', 'Create and review the budget for the upcoming quarter', 7, '2024-09-07', 'pending', '2024-09-06 08:05:21'),
-(26, 'Write blog post on industry trend', 'Draft and publish a blog post about current industry trend', 7, '2024-09-07', 'pending', '2024-09-06 08:10:50'),
-(27, 'Renew software license', 'Ensure all software licenses are renewed and up to date', 2, '2024-09-06', 'pending', '2024-09-06 08:11:28');
+(1, 'Print Documents', 'Kindly print the internal memo shared via email and stick them on the noticeboard', 3, '2025-07-17', 'pending', '2025-07-12 23:29:10'),
+(2, 'Print Documents', 'Kindly print the internal memo shared via email and stick them on the noticeboard', 3, '2025-07-17', 'in_progress', '2025-07-12 23:30:15'),
+(3, 'Meeting Minutes', 'Attend the team meeting, take notes on key decisions, and share a summary with action items.', 3, '2025-07-25', 'pending', '2025-07-13 00:47:35'),
+(4, 'Website Content Review', 'Review the homepage content for spelling/grammar errors and suggest improvements for clarity.', 6, '2025-07-17', 'pending', '2025-07-13 00:59:49'),
+(5, 'Social Media Post Creation', 'Create a short social media post promoting our latest product. Include an image suggestion.', 6, '2025-07-30', 'pending', '2025-07-13 01:00:56'),
+(6, 'Data Entry Task', 'Enter the provided customer details into the Excel sheet, ensuring no duplicates and correct formatting.', 4, '2025-07-29', 'pending', '2025-07-13 01:01:45'),
+(7, 'Market Research', 'Find our competitors in our industry and note down their pricing models. Summarize in 3-4 bullet points.', 4, '2025-08-07', 'pending', '2025-07-13 01:02:32'),
+(8, 'Inventory Check', 'Verify stock levels for 10 key products and note any discrepancies in the system.', 4, '2025-07-19', 'pending', '2025-07-13 01:05:47');
 
 -- --------------------------------------------------------
 
@@ -107,6 +93,7 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `full_name` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `role` enum('admin','employee') NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
@@ -116,11 +103,13 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `full_name`, `username`, `password`, `role`, `created_at`) VALUES
-(1, 'Oliver', 'admin', '$2y$10$TnyR1Y43m1EIWpb0MiwE8Ocm6rj0F2KojE3PobVfQDo9HYlAHY/7O', 'admin', '2024-08-28 07:10:04'),
-(2, 'Elias A.', 'elias', '$2y$10$8xpI.hVCVd/GKUzcYTxLUO7ICSqlxX5GstSv7WoOYfXuYOO/SZAZ2', 'employee', '2024-08-28 07:10:40'),
-(7, 'John', 'john', '$2y$10$CiV/f.jO5vIsSi0Fp1Xe7ubWG9v8uKfC.VfzQr/sjb5/gypWNdlBW', 'employee', '2024-08-29 17:11:21'),
-(8, 'Oliver', 'oliver', '$2y$10$E9Xx8UCsFcw44lfXxiq/5OJtloW381YJnu5lkn6q6uzIPdL5yH3PO', 'employee', '2024-08-29 17:11:34');
+INSERT INTO `users` (`id`, `full_name`, `username`, `email`, `password`, `role`, `created_at`) VALUES
+(1, 'Edina Bwari', 'admin', 'edinakwambokabwari@gmail.com', '$2y$10$TnyR1Y43m1EIWpb0MiwE8Ocm6rj0F2KojE3PobVfQDo9HYlAHY/7O', 'admin', '2024-08-28 07:10:04'),
+(2, 'Edina Bwari', 'EdinaAdmin', 'edinakwambokabwari@gmail.com', '$2y$10$SuN66lm2BRPRcwp3v6oRy.ayv2rqV5oLhzYKArYUMwQeggVFfqNbG', 'admin', '2025-07-12 15:12:52'),
+(3, 'Collins James', 'CollinsLogistics', 'collins@gmail.com', '$2y$10$Ol1P17Eq.Ikec99bSxVaued9vdp01QZs5ak/rMTI6k7hYYlw1INeS', 'employee', '2025-07-12 15:51:05'),
+(4, 'Brighton Junior', 'BrightonSales', 'bwarikwambokaedina@gmail.com', '$2y$10$OP7IOrUac81fmfBVLwTrXeNHiOHgxN41lDr5t8DmGlZ2p7YvuMUyK', 'employee', '2025-07-12 21:59:18'),
+(6, 'Summer Bloom', 'BloomHr', 'Bloom@gmail.com', '$2y$10$.saGpiHggKSkK/rYOHPDu.qRTAW/r4Zar1rLhHDMGzVibXzhPKw1u', 'employee', '2025-07-13 00:42:05'),
+(7, 'Haven Bright', 'HavenIntern', 'Haven@gmail.com', '$2y$10$aD06oRMGcD3IbCmONo2CWeHGvlWvACQtDOrOr6.X0LNGH1fMTGQKe', 'employee', '2025-07-13 01:10:00');
 
 --
 -- Indexes for dumped tables
@@ -153,19 +142,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

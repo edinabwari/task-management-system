@@ -1,5 +1,3 @@
-// allows your PHP application to talk to your MySQL database.
-
 <?php  
 
 $sName = "localhost";
