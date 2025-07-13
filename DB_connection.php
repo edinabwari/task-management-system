@@ -1,9 +1,9 @@
 <?php  
 
-$sName = "localhost";
-$uName = "root";
-$pass  = "";
-$db_name = "task_management_db";
+$sName = "sql102.infinityfree.com"; 
+$uName = "if0_39457663";            
+$pass  = "KehkYWVVL5ou"; 
+$db_name = "if0_39457663_task_management_db"; 
 
 try {
 	$conn = new PDO("mysql:host=$sName;dbname=$db_name", $uName, $pass);
