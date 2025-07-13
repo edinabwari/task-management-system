@@ -1,7 +1,7 @@
 <nav class="side-bar">
 			<div class="user-p">
 				<img src="img/user.png">
-				<h4>@<?=$_SESSION['username']?></h4>
+				<h4> Hello <?=$_SESSION['username']?></h4>
 			</div>
 			
 			<?php 
