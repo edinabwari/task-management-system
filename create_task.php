@@ -37,21 +37,21 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			</div>
       	  <?php } ?>
 				<div class="input-holder">
-					<lable>Title</lable>
+					<lable>Title Task</lable>
 					<input type="text" name="title" class="input-1" placeholder="Title"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Description</lable>
+					<lable>Description of the Task</lable>
 					<textarea type="text" name="description" class="input-1" placeholder="Description"></textarea><br>
 				</div>
 				<div class="input-holder">
-					<lable>Due Date</lable>
+					<lable>Deadline to be Completed</lable>
 					<input type="date" name="due_date" class="input-1" placeholder="Due Date"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Assigned to</lable>
+					<lable>Task assigned to</lable>
 					<select name="assigned_to" class="input-1">
-						<option value="0">Select employee</option>
+						<option value="0">Select user</option>
 						<?php if ($users !=0) { 
 							foreach ($users as $user) {
 						?>
@@ -59,7 +59,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 						<?php } } ?>
 					</select><br>
 				</div>
-				<button class="edit-btn">Create Task</button>
+				<button class="edit-btn">Assign Task</button>
 			</form>
 			
 		</section>
