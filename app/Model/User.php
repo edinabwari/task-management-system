@@ -21,10 +21,11 @@ function insert_user($conn, $data){
 
 
 function update_user($conn, $data){
-	$sql = "UPDATE users SET full_name=?, username=?, email=?, password=?, role=? WHERE id=? AND role=?";
+	$sql = "UPDATE users SET full_name=?, username=?, email=?, password=?, role=? WHERE id=?";
 	$stmt = $conn->prepare($sql);
 	$stmt->execute($data);
 }
+
 
 function delete_user($conn, $data){
 	$sql = "DELETE FROM users WHERE id=? AND role=?";
