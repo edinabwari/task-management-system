@@ -20,7 +20,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">Profile </h4>
+			<h4 class="title">Profile details</h4>
          <table class="main-table" style="max-width: 300px;">
 				<tr>
 					<td>Full Name</td>
