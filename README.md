@@ -1,17 +1,25 @@
 # Task Management System
 
-A lightweight PHP-based Task Management System built for the Cytonn Software Engineering Internship Challenge.
+A PHP-based Task Management System built for 2025 Cytonn Software Engineering Internship Challenge.
 
 ## Features
 
-- Admin panel to:
-  - Add, edit, delete users
-  - Assign tasks with deadlines
-- Users can:
-  - View tasks assigned to them
-  - Update task status: Pending, In Progress, Completed
-- Email notifications sent automatically when a task is assigned
-- Responsive layout with basic styling using CSS and vanilla JavaScript
+### Admin Panel to allow admin to:
+- Add, edit, and delete users
+- Assign tasks with deadline dates
+- View all tasks in the system
+- logout 
+
+### User Panel
+- View tasks assigned to them
+- Update task status: `Pending`, `In Progress`, `Completed`
+- View their profile details
+- View system notifications
+- logout 
+
+### Notifications
+- Email alerts sent automatically to users when tasks are assigned to them.
+- User are able to also see notifications on the system.
 
 ## Technologies Used
 
@@ -40,4 +48,9 @@ A lightweight PHP-based Task Management System built for the Cytonn Software Eng
 - email : edinakwambokabwari@gmail.com
 - Password: @Edina123
 
+##  Database
+
+- **Database Name:** `task_management_db`
+- **SQL Dump File:** `task_management_db.sql`
+- **Database Type:** MySQL 
 
