@@ -40,14 +40,4 @@ A lightweight PHP-based Task Management System built for the Cytonn Software Eng
 - email : edinakwambokabwari@gmail.com
 - Password: @Edina123
 
-## Acknowledgment
 
-The project UI was inspired by a YouTube tutorial.  
-I built my own version from scratch, added features, and customized the styling and structure.
-
-For debugging and implementation guidance, I referred to:
--  YouTube resources  
--  Official documentation  
--  AI tools (e.g., ChatGPT, Copilot)
-
-These tools supported my problem solving process and helped improve the final outcome.
