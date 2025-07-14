@@ -32,3 +32,4 @@ function notification_make_read($conn, $recipient_id, $notification_id){
 	$stmt = $conn->prepare($sql);
 	$stmt->execute([$notification_id, $recipient_id]);
 }
+
