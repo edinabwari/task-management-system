@@ -6,7 +6,7 @@ A PHP-based Task Management System built for 2025 Cytonn Software Engineering In
 
 ### Admin Panel to allow admin to:
 - Add, edit, and delete users
-- [Admin](https://github.com/edinabwari/task-management-system/blob/main/img/adminadduser.png)
+  ![Admin](https://github.com/edinabwari/task-management-system/blob/main/img/adminadduser.png)
 - Assign tasks with deadline dates
 - View all tasks in the system
 - logout 
