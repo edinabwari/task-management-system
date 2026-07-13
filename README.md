@@ -6,6 +6,7 @@ A PHP-based Task Management System built for 2025 Cytonn Software Engineering In
 
 ### Admin Panel to allow admin to:
 - Add, edit, and delete users
+- [Admin](https://github.com/edinabwari/task-management-system/blob/main/img/adminadduser.png)
 - Assign tasks with deadline dates
 - View all tasks in the system
 - logout 
@@ -29,11 +30,6 @@ A PHP-based Task Management System built for 2025 Cytonn Software Engineering In
 - JavaScript (Vanilla)
 - PHPMailer 
 
-##  Live Demo
-
-[Click to View Live System](https://tasksystem.fwh.is/login.php)  
-*(Hosted on InfinityFree)*
-
 ##  How to Set Up Locally
 
 1. Install [XAMPP](https://www.apachefriends.org/)
@@ -47,6 +43,7 @@ A PHP-based Task Management System built for 2025 Cytonn Software Engineering In
 - Username: EdinaAdmin
 - email : edinakwambokabwari@gmail.com
 - Password: @Edina123
+
 
 ##  Database
 
