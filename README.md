@@ -8,13 +8,18 @@ A PHP-based Task Management System built for 2025 Cytonn Software Engineering In
 - Add, edit, and delete users
   ![Admin](https://github.com/edinabwari/task-management-system/blob/main/img/adminadduser.png)
 - Assign tasks with deadline dates
+  ![AssignTask](https://github.com/edinabwari/task-management-system/blob/main/img/admincreatetask.png)
 - View all tasks in the system
+  ![task](https://github.com/edinabwari/task-management-system/blob/main/img/admin%20alltask.png)
 - logout 
 
 ### User Panel
 - View tasks assigned to them
+  ![login](https://github.com/edinabwari/task-management-system/blob/main/img/employeelogin.png)
+  ![dashboard](https://github.com/edinabwari/task-management-system/blob/main/img/userdashboard.png)
 - Update task status: `Pending`, `In Progress`, `Completed`
 - View their profile details
+  ![profile](https://github.com/edinabwari/task-management-system/blob/main/img/useprofile.png)
 - View system notifications
 - logout 
 
